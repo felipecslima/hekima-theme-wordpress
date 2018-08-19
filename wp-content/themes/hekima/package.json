@@ -23,5 +23,8 @@
     "grunt-contrib-imagemin": "~0.1.4",
     "grunt-svgmin": "~0.1.0",
     "grunt-contrib-watch": "~0.5.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
   }
 }

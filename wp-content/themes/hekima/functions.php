@@ -52,3 +52,5 @@ function register_widgets(){
 
 }//end register_widgets()
 add_action( 'widgets_init', 'register_widgets' );
+
+wp_register_script('livereload', 'http://hekima.local:35729/livereload.js?snipver=1', null, false, true);

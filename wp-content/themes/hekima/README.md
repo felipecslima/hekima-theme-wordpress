@@ -19,14 +19,14 @@ This theme integrates RequireJS for Javascript dependency management and lazy-lo
 
 The `bower` task will take any packages installed via Bower, and add them to the require config.  There is one caveat at the moment, because the `Gruntfile` is in the theme and not in the root of the site, the `baseDir` setting causes this task to build incorrect paths.  All that needs to be done is to remove the initial `../`'s that are added.  For example, here is the config after running the task:
 
-	"baseUrl": "content/themes/yeopress/js",
+	"baseUrl": "content/themes/hekima/js",
 	"paths": {
 		"jquery": "../../../../js/vendor/jquery/jquery"
 	}
 
 What we really wanted was just the part that reads `vendor/jquery/jquery`, so just remove the part we don't need and you will be good to go:
 
-	"baseUrl": "content/themes/yeopress/js",
+	"baseUrl": "content/themes/hekima/js",
 	"paths": {
 		"jquery": "vendor/jquery/jquery"
 	}

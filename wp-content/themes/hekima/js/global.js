@@ -1,5 +1,5 @@
 require.config({
-	"baseUrl": "wp-content/themes/yeopress/js",
+	"baseUrl": "wp-content/themes/hekima/js",
 	"paths": {
 		"jquery": "vendor/jquery/jquery"
 	}
