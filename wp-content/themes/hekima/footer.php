@@ -4,7 +4,7 @@
 				<div class="column-1 d-flex flex-row ">
 					<div>
 						<div class="footer-logo">
-							<img src="<?php bloginfo('template_url');?>/images/logo-hekima-white@3x.png" alt="Logo Hekima">
+							<img src="<?php bloginfo('template_url');?>/images/svg/logo-hekima-white.svg" alt="Logo Hekima">
 						</div>
 						<p class="footer-slogan">
 							<b>Seus dados. Nossa Inteligência Artificial.</b> <br/>

@@ -271,7 +271,7 @@ a:hover {
 /* ========================================================================== */
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1em;
+  margin: 0;
   line-height: 1.5em;
 }
 
@@ -303,7 +303,9 @@ ol,
 ul,
 p,
 pre {
-  margin: 0 0 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Paragraphs */
@@ -374,7 +376,6 @@ input.button {
 /* ========================================================================== */
 /* Less than 320px but will apply at all sizes */
 #page-wrap {
-  width: 90%;
   margin: 0 auto;
   -webkit-box-shadow: 0 0 3em 0 #444;
   box-shadow: 0 0 3em 0 #444;
@@ -419,7 +420,7 @@ input.button {
   /* W3C */
 }
 .lt-ie9 #page-header ul li {
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#298cba', endColorstr='#1d6385',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#298cba', endColorstr='#1d6385', GradientType=0);
   /* IE6-8 */
 }
 #page-header ul li a {
@@ -470,95 +471,11 @@ input.button {
   padding: 0;
 }
 
-.search-form {
-  background: url("/wp-content/themes/hekima/images/black_lozenge.png");
-  overflow: hidden;
-  padding: 1em;
-  margin-bottom: 1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-}
-.search-form .input-wrap {
-  float: left;
-}
-.search-form .input-wrap label {
-  display: none;
-}
-.search-form .input-wrap input {
-  width: 100%;
-}
-.search-form .search {
-  width: 75%;
-  margin-right: 3%;
-}
-.search-form .submit {
-  width: 22%;
-}
-
-/* Footer */
-#page-footer {
-  width: 90%;
-  margin: 0 auto;
-  padding: 1em 0;
-}
-
 /* 320px to 479px */
 /* 480px to 639px */
-@media only screen and (min-width: 480px) {
-  #page-header ul {
-    overflow: auto;
-  }
-  #page-header ul li {
-    float: left;
-  }
-}
 /* 640px to 767px */
 /* 768px to 1024px */
-@media only screen and (min-width: 768px) {
-  #page-header {
-    padding: 1em 2em;
-  }
-
-  #content-wrap {
-    overflow: auto;
-  }
-
-  #page-content {
-    float: left;
-    width: 55%;
-  }
-
-  #page-sidebar {
-    float: right;
-    width: 40%;
-  }
-
-  .search-form .search {
-    width: 70%;
-  }
-  .search-form .submit {
-    width: 27%;
-  }
-}
 /* 1024px to 1534px */
-@media only screen and (min-width: 1024px) {
-  #page-wrap {
-    width: 80%;
-  }
-
-  #page-content {
-    width: 65%;
-    padding: 1em;
-  }
-
-  #page-sidebar {
-    width: 31%;
-  }
-
-  #page-footer {
-    width: 80%;
-  }
-}
 /* More than 1534px */
 /* High PX Density */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {

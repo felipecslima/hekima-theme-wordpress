@@ -54,3 +54,20 @@ function register_widgets(){
 add_action( 'widgets_init', 'register_widgets' );
 
 wp_register_script('livereload', 'http://hekima.local:35729/livereload.js?snipver=1', null, false, true);
+
+
+function create_post_type() {
+    register_post_type( 'hkm-partners',
+        array(
+            'supports' => array('title', 'editor', 'thumbnail'),
+            'labels' => array(
+                'name' => __( 'Parceiros' ),
+                'singular_name' => __( 'Parceiro' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'parceiros'),
+        )
+    );
+}
+add_action( 'init', 'create_post_type' );
