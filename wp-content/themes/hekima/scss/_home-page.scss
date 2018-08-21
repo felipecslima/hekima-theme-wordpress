@@ -3,6 +3,8 @@
   position: relative;
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
   .home-box-1-bg-square {
     position: absolute;
     height: 100%;
@@ -22,6 +24,9 @@
     position: relative;
     left: 169px;
     z-index: 1;
+    .chess-piece {
+      display: none
+    }
     h1 {
       font-size: 38px;
       font-weight: 300;
@@ -44,6 +49,12 @@
       font-size: 32px;
       line-height: 1.13;
       color: #1a9eb8;
+
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
       img {
         width: 24px;
         margin-left: 16px;
@@ -57,7 +68,8 @@
   position: relative;
   height: 100%;
   width: 100%;
-
+  display: flex;
+  align-items: center;
   .home-box-2-bg-lines {
     position: absolute;
     height: 100%;
@@ -69,6 +81,9 @@
     position: relative;
     left: 169px;
     z-index: 1;
+    .chess-piece-horse {
+      display: none;
+    }
     p {
       padding: 0;
       margin: 16px 0 0 0;
@@ -83,6 +98,12 @@
       font-size: 32px;
       line-height: 1.13;
       color: #1a9eb8;
+
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
       img {
         width: 24px;
         margin-left: 16px;
@@ -112,8 +133,10 @@
       margin: 48px 0 0 0;
       padding: 0;
       list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       li {
-
         margin: 0 0 0 24px;
         &:first-of-type {
           margin: 0;
@@ -138,6 +161,15 @@
     .link {
       margin: 48px 0 64px 0;
       height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
     }
 
     a {
@@ -174,32 +206,18 @@
     }
 
     .partners {
-      margin-top: 48px;
+      margin: 48px 0 64px 0;
       ul {
         margin: 0;
         padding: 0;
         li {
           margin: 24px 0;
-          &.line-with-4 {
-            display: none !important;
-          }
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
           a {
-          }
-        }
-      }
-    }
 
-    .link {
-      a {
-        padding: 0;
-        margin: 31px 0 64px 0;
-        font-family: 'Covered By Your Grace', cursive;
-        font-size: 32px;
-        line-height: 1.13;
-        color: #1a9eb8;
-        img {
-          width: 24px;
-          margin-left: 16px;
+          }
         }
       }
     }
@@ -229,7 +247,14 @@
       ul {
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
         li {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
           padding: 24px 0;
           border-bottom: solid 2px rgba(255, 255, 255, 0.32);
           &:first-of-type {
@@ -286,6 +311,11 @@
 
           .line-3 {
             margin-top: 16px;
+            // d-flex flex-row justify-content-start align-content-center
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
             .date {
               font-size: 12px;
               line-height: 1.5;
@@ -297,8 +327,13 @@
               color: #555555;
               text-transform: uppercase;
               margin-left: 24px;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
               img {
-                margin-left: 16px;
+                margin-left: 8px;
                 width: 16px;
               }
             }
@@ -307,22 +342,33 @@
           }
         }
       }
-    }
 
-    .link {
-      a {
+      .link {
+        margin: 48px 0 64px 0;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         padding: 0;
-        margin: 31px 0 64px 0;
         font-family: 'Covered By Your Grace', cursive;
         font-size: 32px;
         line-height: 1.13;
-        color: #1a9eb8;
-        img {
-          width: 24px;
-          margin-left: 16px;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #1a9eb8;
+          img {
+            width: 24px;
+            margin-left: 16px;
+          }
         }
       }
+
     }
+
   }
 }
 
@@ -338,6 +384,10 @@
     width: 100%;
     padding: 0 16px;
     .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
       h2 {
         font-size: 38px;
         font-weight: 500;
@@ -392,7 +442,6 @@
           text-align: right;
           img {
             width: 24px;
-            margin-left: 16px;
           }
         }
       }
@@ -415,15 +464,9 @@
         .home-content {
           .partners {
             ul {
+              overflow-y: scroll;
               li {
-                &.line-with-4 {
-                  display: flex !important;
-                }
-                &.line-with-6 {
-                  display: none !important;
-                }
-                a {
-                }
+
               }
             }
           }
@@ -440,4 +483,330 @@
       background-size: 60%;
     }
   }
+}
+
+@media only screen and (max-width: 960px) {
+  .home-box-1 {
+    .home-chess {
+      display: none;
+    }
+    .home-content {
+      position: relative;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      .chess-piece {
+        display: block;
+        width: 48px;
+        height: 145px;
+        background: url(../images/home-chess-piece.png) no-repeat;
+        background-size: 48px 145px;
+        margin-top: 61px;
+      }
+      h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 24px
+      }
+      p {
+        font-size: 24px;
+        text-align: center
+      }
+      a {
+        font-size: 24px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .home-box-2 {
+    .home-content {
+      position: relative;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      z-index: 1;
+      padding: 0 16px;
+      .chess-piece-horse {
+        display: block;
+        width: 64px;
+        height: 115px;
+        background: url(../images/home-chess-piece-horse.png) no-repeat;
+        background-size: 64px 115px;
+        margin-top: 61px;
+      }
+      p {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.66;
+        font-weight: normal;
+
+      }
+      a {
+        font-size: 24px;
+        img {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .home-box-3 {
+    .home-content {
+      margin-top: 48px;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 16px;
+      h2 {
+        font-size: 24px;
+        color: #41354b;
+        font-weight: normal;
+      }
+
+      ul {
+        margin: 48px 0 0 0;
+        padding: 0;
+        list-style: none;
+        overflow-y: scroll;
+        li {
+          min-width: 224px;
+          margin: 0 0 0 40px;
+          &:first-of-type {
+            margin: 0;
+          }
+          h3 {
+            font-size: 18px;
+            margin: 16px 0 0 0;
+          }
+
+          p {
+            font-size: 14px;
+            margin: 8px 0 0 0;
+          }
+        }
+      }
+
+      .link {
+        margin: 48px 0 64px 0;
+        height: 49px;
+        justify-content: start;
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .home-box-4 {
+    background-color: #ffffff;
+    position: relative;
+
+    .home-content {
+      margin-top: 72px;
+      max-width: 100%;
+
+      h2 {
+        font-size: 24px;
+        font-weight: normal;
+      }
+
+      .partners {
+        margin: 32px 0 48px 0;
+        overflow: hidden;
+        ul {
+
+          margin: 0;
+          padding: 0;
+          li {
+
+            &.line-with-4 {
+              display: none !important;
+            }
+            a {
+              width: 116px;
+              display: inline-block;
+              margin-left: 16px;
+              &:first-of-type {
+                margin: 0;
+              }
+              img {
+                width: 116px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home-box-5 {
+    .home-content {
+      margin-top: 48px;
+      max-width: 100%;
+      width: 100%;
+      padding: 0 16px;
+      h2 {
+        font-size: 24px;
+        font-weight: normal;
+      }
+
+      .home-blog {
+        margin-top: 32px;
+        ul {
+          flex-direction: row;
+          overflow-y: scroll;
+          li {
+            flex-direction: column;
+            width: 224px;
+            margin-left: 34px;
+            border-bottom: none;
+            padding: 0 0 24px 0;
+            &:first-of-type {
+              padding-top: 0;
+              margin-left: 0;
+            }
+            &:last-of-type {
+              border: none;
+            }
+            h3 {
+              color: #41354b;
+              font-size: 18px;
+              font-weight: 700;
+              margin: 0;
+            }
+            .line-1 {
+              margin-top: 8px;
+              display: flex;
+              flex-direction: column;
+              .category {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.57;
+                color: #1a9eb8;
+                text-transform: uppercase;
+              }
+              .author {
+                margin-top: 8px;
+                margin-left: 0;
+                font-size: 14px;
+                line-height: 1.57;
+                color: #555555;
+              }
+            }
+
+            .line-2 {
+              margin-top: 8px;
+              &.description {
+
+                overflow: hidden;
+                * {
+                  width: 224px;
+                  display: none;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  word-break: break-all;
+                  font-size: 14px;
+                }
+                p {
+                  width: 224px;
+                  &:first-of-type {
+                    display: block;
+                  }
+                }
+                div {
+                  display: none;
+                }
+              }
+            }
+
+            .line-3 {
+              margin-top: 16px;
+              justify-content: space-between;
+              .date {
+                font-size: 12px;
+                line-height: 1.5;
+                color: #555555;
+              }
+              .permalink {
+                font-size: 12px;
+                line-height: 1.5;
+                color: #555555;
+                text-transform: uppercase;
+                margin-left: 24px;
+                img {
+                  margin-left: 16px;
+                  width: 16px;
+                }
+              }
+            }
+            a {
+            }
+          }
+        }
+
+        .link {
+          margin: 48px 0 50px 0;
+          height: 49px;
+          justify-content: start;
+          a {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0;
+
+          }
+        }
+      }
+    }
+  }
+
+  .home-box-6 {
+    .home-content {
+      margin-top: 46px;
+      position: relative;
+      max-width: 779px;
+      width: 100%;
+      padding: 0 16px;
+      .title {
+        h2 {
+          font-size: 24px;
+          font-weight: normal;
+          margin-right: 21px;
+        }
+        .image {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          img {
+            width: 80px;
+          }
+        }
+      }
+
+      .home-form {
+        margin-top: 24px;
+        form {
+          button {
+            font-size: 24px;
+            font-weight: normal;
+            img {
+              width: 24px;
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
 }

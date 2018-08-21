@@ -6,7 +6,7 @@
         </h2>
 
         <div class="hekima-helps-you">
-            <ul class="d-flex flex-row justify-content-between">
+            <ul class="">
                 <li>
                     <div class="image">
                         <img src="<?php bloginfo('template_url'); ?>/images/svg/home-box-3-puzzle.svg" alt="Puzzle">
@@ -63,8 +63,8 @@
                 </li>
             </ul>
 
-            <div class="link d-flex align-items-center justify-content-center">
-                <a href="" class="d-flex flex-row align-items-center">
+            <div class="link" <!--  d-flex align-items-center justify-content-center -->
+                <a href="" class=""> <!-- d-flex flex-row align-items-center -->
                     <span>Conheça nossas soluções</span>
                     <img src="<?php bloginfo('template_url'); ?>/images/arrow-right-blue@3x.png" alt="Clique aqui">
                 </a>

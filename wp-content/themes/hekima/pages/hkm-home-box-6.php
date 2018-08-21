@@ -1,7 +1,7 @@
 <div class="home-box-6 d-flex justify-content-center">
     <div class="home-content">
 
-        <div class="title d-flex flex-row justify-content-between">
+        <div class="title">
             <h2 class="d-flex align-items-end">
                 Estamos ansiosos para entender o seu desafio de negócio!
             </h2>

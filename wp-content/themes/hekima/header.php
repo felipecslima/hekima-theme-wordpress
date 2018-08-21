@@ -16,10 +16,13 @@
     <link rel="author" href="">
     <?php wp_head() ?>
 
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/animate.css" crossorigin="anonymous">
+
     <script
             src="<?php bloginfo('template_url'); ?>/js/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
+
 
     <script src="<?php bloginfo('template_url'); ?>/js/utils.js"></script>
 
@@ -33,9 +36,6 @@
 
 </head>
 <body <?php body_class() ?>>
-<div class="d-flex align-content-start flex-wrap">
-
-</div>
 <header class='header text-primary d-flex flex-row justify-content-between align-items-center desktop'>
     <?php wp_nav_menu(array(
         'theme_location' => 'main-nav',
@@ -49,13 +49,13 @@
 
 </header>
 
-<header class='d-flex flex-row mobile justify-content-start align-content-center'>
+<header class="mobile">
     <div class="menu-mobile">
-        <nav class="appbar d-flex flex-row justify-content-start align-content-center">
-            <div class="icon-close d-flex flex-row justify-content-center align-content-center">
-                <img src="<?php bloginfo('template_url'); ?>/images/svg/icon-close.svg" alt="Close">
+        <nav class="appbar">
+            <div class="icon-menu-mobile-close">
+                <img class="animated jello" src="<?php bloginfo('template_url'); ?>/images/svg/icon-close.svg" alt="Close">
             </div>
-            <div class="logo d-flex flex-row justify-content-center align-content-center">
+            <div class="logo">
                 <img src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-white.svg" alt="Close">
             </div>
         </nav>
@@ -63,18 +63,20 @@
         <?php wp_nav_menu(array(
             'theme_location' => 'main-nav',
             'container' => 'nav',
-            'container_id' => 'primary-nav',
+            'container_id' => 'primary-nav2',
         )) ?>
     </div>
 
-    <div class="icon-close d-flex flex-row justify-content-center align-content-center">
+    <div class="icon-menu-mobile">
         <img src="<?php bloginfo('template_url'); ?>/images/svg/icon-menu-mobile.svg" alt="Menu">
     </div>
 
-    <div class="logo d-flex flex-row justify-content-center align-content-center">
+    <div class="logo">
         <img src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-black.svg" alt="Logo Hekima">
     </div>
 
 </header>
+
+<div class="page-loading animated"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
 
 <div id="content-wrap">

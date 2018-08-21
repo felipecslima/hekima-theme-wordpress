@@ -6,7 +6,7 @@
         </h2>
 
         <div class="home-blog">
-            <ul class="d-flex flex-column">
+            <ul class="">
                 <?php
 
                 $rss = new DOMDocument();
@@ -46,22 +46,20 @@
 
                     $categorys = join(', ', [$category2, $category]);
 
-                    // echo "<pre>"; print_r($categorys); exit;
-
                     $creator = $post['creator'];
                     $link = $post['link'];
                     $description = $post['desc'];
                     $date = strftime("%d %b %Y", strtotime($post['date']));
                     ?>
-                    <li class="d-flex flex-row justify-content-start">
+                    <li>
                         <div class="text">
                             <h3><?php echo $title ?></h3>
-                            <div class="line-1 d-flex flex-row">
+                            <div class="line-1">
                                 <div class="category"><?php echo $categorys ?></div>
                                 <div class="author">Artigo por <?php echo $creator ?></div>
                             </div>
                             <div class="line-2 description"><?php echo $description ?></div>
-                            <div class="line-3 d-flex flex-row justify-content-start align-content-center">
+                            <div class="line-3">
                                 <div class="date d-flex align-items-center"><?php echo $date ?></div>
 
                                 <a class="permalink d-flex align-items-center" href="<?php echo $link ?>">
@@ -76,8 +74,8 @@
 
 
             </ul>
-            <div class="link d-flex align-items-center justify-content-center">
-                <a href="" class="d-flex flex-row align-items-center">
+            <div class="link">
+                <a href="" class="">
                     <span>Acesse nossos conteúdos</span>
                     <img src="<?php bloginfo('template_url'); ?>/images/arrow-right-blue@3x.png" alt="Clique aqui">
                 </a>

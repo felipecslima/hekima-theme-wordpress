@@ -1,12 +1,20 @@
 .footer {
-    padding: 56px 56px 50px 56px;
-    background-color: #595149;
-    .footer-logo {
+  padding: 56px 56px 50px 56px;
+  background-color: #595149;
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .column-1 {
+      display: flex;
+      flex-direction: row;
+      .footer-logo {
         img {
-            width: 116px;
+          width: 116px;
         }
-    }
-    .footer-slogan {
+      }
+      .footer-slogan {
         margin-top: 32px;
         font-size: 16px;
         width: 294px;
@@ -14,40 +22,93 @@
         color: #ffffff;
         font-weight: 300;
         b {
-            font-weight: normal;
+          font-weight: normal;
         }
-    }
-    .menu {
+      }
+      .menu {
         margin-left: 8.5%;
+        min-width: 150px;
         ul {
-            li {
-                a {
-                    font-size: 16px;
-                    color: #ffffff;
-                }
+          li {
+            a {
+              font-size: 16px;
+              color: #ffffff;
             }
+          }
         }
+      }
     }
-    .copyright {
+    .column-2 {
+      display: flex;
+      flex-direction: column;
+      .footer-social {
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          li {
+            a {
+              color: #ffffff;
+              font-size: 18px;
+            }
+
+            &.footer-social-links {
+              display: flex;
+              flex-direction: row;
+              a {
+                margin-left: 40px;
+              }
+            }
+          }
+        }
+      }
+      .copyright {
         margin-top: 81px;
         font-size: 12px;
         color: #ffffff;
         text-align: right;
         line-height: 1.5;
         width: 100%;
+      }
     }
-    .footer-social{
-        ul{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            li{
-                margin-left: 40px;
-                a{
-                    color: #ffffff;
-                    font-size: 18px;
+
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+  .footer {
+    padding: 32px 16px;
+    .wrap {
+      flex-direction: column;
+      .menu {
+        display: none;
+      }
+      .column-2 {
+        .footer-social {
+          ul {
+            flex-direction: column;
+            justify-content: flex-start;
+            li {
+              &:last-of-type {
+                margin-top: 16px;
+              }
+              a{
+                &:first-of-type{
+                  margin: 0;
                 }
+              }
             }
+          }
         }
+        .copyright {
+          margin-top: 32px;
+          text-align: left;
+        }
+      }
     }
+  }
 }
