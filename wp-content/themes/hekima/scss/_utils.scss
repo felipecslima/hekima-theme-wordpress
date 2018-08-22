@@ -1,0 +1,287 @@
+@mixin text-decoratorStyle() {
+  &.font {
+    &-family {
+      &-grace {
+        font-family: 'Covered By Your Grace', cursive;
+      }
+      &-roboto {
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+    &-size {
+      &-38 {
+        font-size: 38px;
+      }
+      &-32 {
+        font-size: 32px;
+      }
+      &-24 {
+        font-size: 24px;
+      }
+      &-18 {
+        font-size: 18px;
+      }
+      &-16 {
+        font-size: 16px;
+      }
+      &-12 {
+        font-size: 12px;
+      }
+    }
+    &-weight {
+      &-normal {
+        font-weight: normal
+      }
+      &-light {
+        font-weight: 300
+      }
+      &-semi-bold {
+        font-weight: 500
+      }
+      &-bold {
+        font-weight: 700
+      }
+    }
+  }
+
+  &.text {
+    &-align {
+      &-left {
+        text-align: left;
+      }
+      &-center {
+        text-align: center;
+      }
+      &-right {
+        text-align: right;
+      }
+    }
+  }
+
+  &.color {
+    &-purple {
+      color: #41354b;
+    }
+    &-blue {
+      color: #1a9eb8;
+    }
+    &-white {
+      color: #fff;
+    }
+  }
+
+  &.bg {
+    &-green {
+      background-color: #d2e4c6;
+    }
+    &-light-grey {
+      background-color: #eceae3;
+    }
+    &-dark-grey {
+      background-color: #787878;
+    }
+    &-white {
+      background-color: #ffffff;
+    }
+  }
+
+  &.border {
+    &-raidus {
+      border-radius: 50%;
+    }
+  }
+
+  &.display {
+    &-flex {
+      display: flex;
+    }
+    &-block {
+      display: block;
+    }
+    &-none {
+      display: none;
+    }
+  }
+
+  &.flex-direction {
+    &-row {
+      flex-direction: row;
+    }
+    &-column {
+      flex-direction: column;
+    }
+  }
+
+  &.flex-align {
+    &-all-center {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  @include text-decorator();
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.content {
+  h1 {
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.26;
+    @include text-decoratorStyle();
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 1.26;
+    font-weight: normal;
+    @include text-decoratorStyle();
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #41354b;
+    @include text-decoratorStyle();
+  }
+}
+
+.font {
+  &-family {
+    &-grace {
+      font-family: 'Covered By Your Grace', cursive;
+    }
+    &-roboto {
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+  &-size {
+    &-38 {
+      font-size: 38px;
+    }
+    &-32 {
+      font-size: 32px;
+    }
+    &-24 {
+      font-size: 24px;
+    }
+    &-18 {
+      font-size: 18px;
+    }
+    &-16 {
+      font-size: 16px;
+    }
+    &-12 {
+      font-size: 12px;
+    }
+  }
+  &-weight {
+    &-normal {
+      font-weight: normal
+    }
+    &-light {
+      font-weight: 300
+    }
+    &-semi-bold {
+      font-weight: 500
+    }
+    &-bold {
+      font-weight: 700
+    }
+  }
+}
+
+.text {
+  &-align {
+    &-left {
+      text-align: left;
+    }
+    &-center {
+      text-align: center;
+    }
+    &-right {
+      text-align: right;
+    }
+  }
+}
+
+.color {
+  &-purple {
+    color: #41354b;
+  }
+  &-blue {
+    color: #1a9eb8;
+  }
+  &-white {
+    color: #fff;
+  }
+}
+
+.bg {
+  &-green {
+    background-color: #d2e4c6;
+  }
+  &-light-grey {
+    background-color: #eceae3;
+  }
+  &-dark-grey {
+    background-color: #787878;
+  }
+  &-white {
+    background-color: #ffffff;
+  }
+}
+
+.border {
+  &-raidus {
+    border-radius: 50%;
+  }
+}
+
+.display {
+  &-flex {
+    display: flex;
+  }
+  &-block {
+    display: block;
+  }
+  &-none {
+    display: none;
+  }
+}
+
+.flex-direction {
+  &-row {
+    flex-direction: row;
+  }
+  &-column {
+    flex-direction: column;
+  }
+}
+
+.flex-align {
+  &-all-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-center-space-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+

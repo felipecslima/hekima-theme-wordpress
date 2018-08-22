@@ -1,0 +1,63 @@
+.about-box-1 {
+  .about-bg-about-us {
+    position: absolute;
+    width: 628px;
+    height: 439px;
+    right: 0;
+    top: 88px;
+    background: url(../images/svg/about-about-us.svg) repeat;
+  }
+  .list {
+    li {
+      margin-left: 24px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.about-box-2 {
+  .content {
+    max-width: 1240px;
+    width: 100%;
+    .list {
+      ul {
+        li {
+          margin-top: 72px;
+          &:first-of-type {
+            margin-top: 0px;
+          }
+
+          .image.blank{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: #ffffff;
+            box-shadow: inset 10px 8px 20px 0 rgba(0, 0, 0, 0.15), inset 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          }
+          p{
+            max-width: 224px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    body {
+
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}
