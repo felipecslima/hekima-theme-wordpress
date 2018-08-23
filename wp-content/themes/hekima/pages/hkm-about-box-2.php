@@ -22,7 +22,8 @@
                                  width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
                         </div>
                         <h3 class="color-purple font-size-24 margin-top-16">Daniele Ribeiro</h3>
-                        <p class="margin-top-4 color-blue font-size-16 font-weight-semi-bold">ANALISTA ADMNISTRATIVO FINANCEIRO</p>
+                        <p class="margin-top-4 color-blue font-size-16 font-weight-semi-bold">ANALISTA ADMNISTRATIVO
+                            FINANCEIRO</p>
                     </div>
 
                     <div class="display-flex flex-direction-column flex-align-all-center">

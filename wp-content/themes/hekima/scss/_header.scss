@@ -38,6 +38,7 @@ header.mobile {
       li {
         height: 64px;
         margin-right: 32px;
+        position: relative;
         &:first-of-type {
           margin-left: 32px;
         }
@@ -48,6 +49,40 @@ header.mobile {
           font-size: 16px;
           color: #41354b;
         }
+
+        ul.sub-menu {
+          display: none;
+          margin-top: -8px;
+        }
+
+        &:hover {
+          ul.sub-menu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            li {
+              margin: 0;
+              height: 48px;
+              padding: 0 24px;
+              background-color: #f9f8f5;
+              width: 243px;
+              a {
+                height: 48px;
+                display: inline-block;
+                line-height: 48px;
+                text-decoration: none;
+                font-weight: normal;
+              }
+              &:hover {
+                background-color: #ffffff;
+                a {
+                  color: #1a9eb8;
+                }
+              }
+            }
+          }
+        }
+
         &.current_page_item {
           a {
             font-weight: 700;
