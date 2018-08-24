@@ -6,27 +6,22 @@
         </h2>
 
         <div class="partners">
-            <ul>
-                <?php
-                $args = array('post_type' => 'hkm-partners', 'posts_per_page' => 100, 'orderby=id&order=DESC');
-                $loop = new WP_Query($args);
+            <?php
+            $args = array('post_type' => 'hkm-partners', 'posts_per_page' => 100, 'orderby=id&order=DESC');
+            $loop = new WP_Query($args);
+            $arrPostsFull = $loop->get_posts();
 
-                $arrPostsFull = $loop->get_posts();
-                $arrPostsDivide6 = array_chunk($arrPostsFull, 6);
 
-                ?>
-                <?php foreach ($arrPostsDivide6 as $arrPost) { ?>
-                    <li class="line-with-6">
-                        <?php foreach ($arrPost as $post) { ?>
-                            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full'); ?>
-                            <a href="">
-                                <img src="<?php echo $image[0] ?>" alt="Clique aqui">
-                            </a>
-                        <?php } ?>
-                    </li>
-                <?php } ?>
+            ?>
+            <?php foreach ($arrPostsFull as $post) { ?>
+                <div>
+                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?>
+                    <a href="">
+                        <img src="<?php echo $image[0] ?>" alt="Clique aqui">
+                    </a>
+                </div>
+            <?php } ?>
 
-            </ul>
         </div>
     </div>
 </div>

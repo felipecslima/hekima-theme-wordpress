@@ -1,3 +1,4 @@
+<div class="page-loading animated"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
 <div class="home-box-1 height-100">
     <div class="home-box-1-bg-square"></div>
     <div class="home-chess"></div>

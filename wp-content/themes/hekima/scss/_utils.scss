@@ -28,7 +28,7 @@
         font-size: 12px;
       }
     }
-    &-weight {
+    &-wt {
       &-normal {
         font-weight: normal
       }
@@ -189,7 +189,7 @@ a {
       font-size: 12px;
     }
   }
-  &-weight {
+  &-wt {
     &-normal {
       font-weight: normal
     }
@@ -220,6 +220,9 @@ a {
 }
 
 .color {
+  &-orange {
+    color: #f3824d;
+  }
   &-purple {
     color: #41354b;
   }
@@ -232,6 +235,18 @@ a {
 }
 
 .bg {
+  &-narvik {
+    background-color: #e9e7de;
+  }
+  &-white-smoke {
+    background-color: #f5f4f4;
+  }
+  &-dark-bridal {
+    background-color: #e2d6d6;
+  }
+  &-bridal {
+    background-color: #f4ebe0;
+  }
   &-green {
     background-color: #d2e4c6;
   }
@@ -278,10 +293,33 @@ a {
     justify-content: center;
     align-items: center;
   }
-
+  &-center-start {
+    justify-content: start;
+    align-items: center;
+  }
+  &-start-space-between {
+    justify-content: space-between;
+    align-items: start;
+  }
+  &-start-center {
+    justify-content: center;
+    align-items: start;
+  }
   &-center-space-between {
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.width {
+  &-100 {
+    width: 100%;
+  }
+}
+
+.max-with {
+  &-1240 {
+    max-width: 1240px;
   }
 }
 

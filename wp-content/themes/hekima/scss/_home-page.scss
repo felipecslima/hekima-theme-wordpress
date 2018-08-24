@@ -206,20 +206,11 @@
     }
 
     .partners {
-      margin: 48px 0 64px 0;
-      ul {
-        margin: 0;
-        padding: 0;
-        li {
-          margin: 24px 0;
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-          a {
-
-          }
-        }
-      }
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-column-gap: 24px;
+      grid-row-gap: 24px;
     }
   }
 }
@@ -621,30 +612,12 @@
       }
 
       .partners {
-        margin: 32px 0 48px 0;
-        overflow: hidden;
-        ul {
-
-          margin: 0;
-          padding: 0;
-          li {
-
-            &.line-with-4 {
-              display: none !important;
-            }
-            a {
-              width: 116px;
-              display: inline-block;
-              margin-left: 16px;
-              &:first-of-type {
-                margin: 0;
-              }
-              img {
-                width: 116px;
-              }
-            }
-          }
-        }
+        overflow-y: scroll;
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 16px;
+        grid-row-gap: 32px;
       }
     }
   }

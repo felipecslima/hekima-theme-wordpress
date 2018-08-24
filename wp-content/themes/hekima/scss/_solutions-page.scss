@@ -1,0 +1,181 @@
+.solutions-box-1 {
+
+  .images-header {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    left: 40%;
+    .bg-solutions-box-1 {
+      background: url(../images/svg/solutions-box-1-bg.svg) repeat;
+      background-position-y: 60px;
+      height: 362px;
+      padding: 58px 0 0 80px;
+      .bg-solutions-box-1-thinking-man {
+        background: url(../images/svg/solutions-box-1-bg-thinking-man.svg) no-repeat;
+        width: 362px;
+        height: 391px;
+      }
+    }
+  }
+
+  .text-box-1 {
+    padding-top: 168px;
+  }
+
+  .content {
+    // max-width: 1240px;
+    width: 100%;
+    .content-text {
+      max-width: 361px;;
+    }
+
+    .line-point {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 32px;
+      padding-top: 16px;
+      position: relative;
+      .line {
+        height: 2px;
+        width: 100%;
+        background: #9d70ad;
+      }
+      .curve {
+        width: 30px;
+        height: 40px;
+        border: 2px solid #9d70ad;
+        border-bottom: none;
+        border-left: none;
+        border-radius: 0 60px 0 0;
+        position: absolute;
+        right: 0;
+        top: 19px
+      }
+      .point {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #9d70ad;
+      }
+      &.last {
+        max-width: 96px;
+        .line {
+          max-width: 50px;
+          margin-left: -25px;
+        }
+        .curve {
+          right: -8px;
+          top: 16px;
+        }
+        .point {
+          position: absolute;
+          right: -11px;
+          top: 49px;
+        }
+      }
+    }
+  }
+
+}
+
+.solutions-box-2 {
+  position: relative;
+  .bg-solutions-box-2-custom-solutions {
+    background: url(../images/solutions-box-2-custom-solutions.png) repeat;
+    background-size: 780px 431px;
+    width: 780px;
+    height: 431px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 1;
+  }
+  .content {
+    width: 100%;
+    .content-text {
+      max-width: 361px;;
+    }
+  }
+
+}
+
+.solutions-box-3 {
+  .text-width-746 {
+    max-width: 746px;
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+}
+
+.solutions-box-4 {
+  position: relative;
+  .text-width-746 {
+    max-width: 746px;
+    width: 100%;
+  }
+  .images-header {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: -40px;
+    overflow: hidden;
+    z-index: 1;
+    .bg-solutions-box-4 {
+      position: absolute;
+      height: 800px;
+      width: 800px;
+      background-color: #e7e088;
+      border-radius: 50%;
+      top: 0;
+      right: -356px;
+    }
+    .bg-solutions-box-4-simplicidata-notebook {
+      position: absolute;
+      width: 663px;
+      height: 472px;
+      background: url(../images/solutions-box-4-simplicidata-notebook.png) no-repeat;
+      background-size: auto 472px;
+      top: 150px;
+      right: 0;
+    }
+  }
+
+  .content {
+    z-index: 2;
+    width: 100%;
+    .content-text {
+      max-width: 361px;;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-column-gap: 45px;
+      grid-row-gap: 64px;
+      .item{
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  html {
+    body {
+
+    }
+  }
+
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}

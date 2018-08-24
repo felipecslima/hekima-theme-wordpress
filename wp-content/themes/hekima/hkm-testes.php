@@ -9,7 +9,7 @@
     <?php
     $varType = ['margin', 'padding'];
     $varTypeSide = ['top', 'right', 'bottom', 'left'];
-    $varTypeNumber = [128, 88, 80, 74, 64, 48, 40, 32, 20, 16, 8, 4, 2];
+    $varTypeNumber = [128, 88, 80, 74, 64, 48, 40, 32, 24, 20, 16, 8, 4, 2];
 
 
     $css = "";
@@ -34,6 +34,31 @@
     }
 
     echo $css;
+
+
+    echo "<br/><br/><br/>";
+
+    $varType = ['flex-width'];
+    $varTypeNumber = [];
+    for ($i = 1; $i <= 100; $i++) {
+        array_push($varTypeNumber, $i);
+
+    }
+
+    $flexWidth = "";
+
+    foreach ($varType as $type) {
+        $flexWidth .= " ." . $type . "{";
+        foreach ($varTypeNumber as $number) {
+            $flexWidth .= " &-" . $number . "{";
+            $flexWidth .= " width:" . $number . "%; ";
+            $flexWidth .= "}";
+        }
+        $flexWidth .= "}";
+    }
+
+    echo $flexWidth;
+
 
     ?>
 </div>
