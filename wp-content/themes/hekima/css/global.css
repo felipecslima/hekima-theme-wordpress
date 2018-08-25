@@ -2143,6 +2143,9 @@ a:hover {
   font-weight: normal;
   line-height: 1.26;
 }
+.content h1.font-style-italic {
+  font-style: italic;
+}
 .content h1.font-family-grace {
   font-family: 'Covered By Your Grace', cursive;
 }
@@ -2188,6 +2191,12 @@ a:hover {
 .content h1.text-align-right {
   text-align: right;
 }
+.content h1.color-greyish-brown {
+  color: #555555;
+}
+.content h1.color-orange {
+  color: #f3824d;
+}
 .content h1.color-purple {
   color: #41354b;
 }
@@ -2196,6 +2205,21 @@ a:hover {
 }
 .content h1.color-white {
   color: #fff;
+}
+.content h1.bg-satin-linen {
+  background-color: #E0DACC;
+}
+.content h1.bg-narvik {
+  background-color: #e9e7de;
+}
+.content h1.bg-white-smoke {
+  background-color: #f5f4f4;
+}
+.content h1.bg-dark-bridal {
+  background-color: #e2d6d6;
+}
+.content h1.bg-bridal {
+  background-color: #f4ebe0;
 }
 .content h1.bg-green {
   background-color: #d2e4c6;
@@ -2235,6 +2259,9 @@ a:hover {
   font-size: 38px;
   line-height: 1.26;
   font-weight: normal;
+}
+.content h2.font-style-italic {
+  font-style: italic;
 }
 .content h2.font-family-grace {
   font-family: 'Covered By Your Grace', cursive;
@@ -2281,6 +2308,12 @@ a:hover {
 .content h2.text-align-right {
   text-align: right;
 }
+.content h2.color-greyish-brown {
+  color: #555555;
+}
+.content h2.color-orange {
+  color: #f3824d;
+}
 .content h2.color-purple {
   color: #41354b;
 }
@@ -2289,6 +2322,21 @@ a:hover {
 }
 .content h2.color-white {
   color: #fff;
+}
+.content h2.bg-satin-linen {
+  background-color: #E0DACC;
+}
+.content h2.bg-narvik {
+  background-color: #e9e7de;
+}
+.content h2.bg-white-smoke {
+  background-color: #f5f4f4;
+}
+.content h2.bg-dark-bridal {
+  background-color: #e2d6d6;
+}
+.content h2.bg-bridal {
+  background-color: #f4ebe0;
 }
 .content h2.bg-green {
   background-color: #d2e4c6;
@@ -2330,6 +2378,9 @@ a:hover {
   line-height: 1.25;
   letter-spacing: normal;
   color: #41354b;
+}
+.content p.font-style-italic {
+  font-style: italic;
 }
 .content p.font-family-grace {
   font-family: 'Covered By Your Grace', cursive;
@@ -2376,6 +2427,12 @@ a:hover {
 .content p.text-align-right {
   text-align: right;
 }
+.content p.color-greyish-brown {
+  color: #555555;
+}
+.content p.color-orange {
+  color: #f3824d;
+}
 .content p.color-purple {
   color: #41354b;
 }
@@ -2384,6 +2441,21 @@ a:hover {
 }
 .content p.color-white {
   color: #fff;
+}
+.content p.bg-satin-linen {
+  background-color: #E0DACC;
+}
+.content p.bg-narvik {
+  background-color: #e9e7de;
+}
+.content p.bg-white-smoke {
+  background-color: #f5f4f4;
+}
+.content p.bg-dark-bridal {
+  background-color: #e2d6d6;
+}
+.content p.bg-bridal {
+  background-color: #f4ebe0;
 }
 .content p.bg-green {
   background-color: #d2e4c6;
@@ -2420,6 +2492,9 @@ a:hover {
   align-items: center;
 }
 
+.font-style-italic {
+  font-style: italic;
+}
 .font-family-grace {
   font-family: 'Covered By Your Grace', cursive;
 }
@@ -2467,6 +2542,9 @@ a:hover {
   text-align: right;
 }
 
+.color-greyish-brown {
+  color: #555555;
+}
 .color-orange {
   color: #f3824d;
 }
@@ -2480,6 +2558,9 @@ a:hover {
   color: #fff;
 }
 
+.bg-satin-linen {
+  background-color: #E0DACC;
+}
 .bg-narvik {
   background-color: #e9e7de;
 }
@@ -2545,6 +2626,10 @@ a:hover {
 .flex-align-center-space-between {
   justify-content: space-between;
   align-items: center;
+}
+.flex-align-end-center {
+  justify-content: flex-end;
+  align-items: start;
 }
 
 .width-100 {
@@ -3432,6 +3517,81 @@ a:hover {
   grid-template-columns: auto auto auto;
   grid-column-gap: 45px;
   grid-row-gap: 64px;
+}
+
+.career-box-1 .menu-degrade {
+  width: 100%;
+  height: 64px;
+  background-image: linear-gradient(#e0dacc, transparent);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.career-box-1 .featured-image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.career-box-1 .list-about-jobs {
+  display: grid;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 66px;
+}
+
+.career-box-2 {
+  position: relative;
+  padding-top: 174px;
+}
+.career-box-2 .bg-career-box-2-diversity {
+  width: 821px;
+  height: 272px;
+  background: url(../images/career-box-2-diversity.png);
+  background-size: 821px 272px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.career-box-2 .content .content-text {
+  max-width: 361px;
+}
+.career-box-2 .content .career-box-2-list {
+  display: grid;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 24px;
+}
+
+.career-box-3 .bg-career-box-2-diversity {
+  width: 821px;
+  height: 272px;
+  background: url(../images/career-box-2-diversity.png);
+  background-size: 821px 272px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.career-box-3 .content .line {
+  height: 1px;
+  background: #979797;
+  width: 100%;
+}
+.career-box-3 .content .career-box-3-list {
+  display: grid;
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 24px;
+}
+.career-box-3 .content .career-box-3-list .jobs .type-job {
+  color: #1a9eb8;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 1px #1a9eb8;
+  font-size: 14px;
 }
 
 .footer {

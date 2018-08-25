@@ -11,7 +11,6 @@
             $loop = new WP_Query($args);
             $arrPostsFull = $loop->get_posts();
 
-
             ?>
             <?php foreach ($arrPostsFull as $post) { ?>
                 <div>

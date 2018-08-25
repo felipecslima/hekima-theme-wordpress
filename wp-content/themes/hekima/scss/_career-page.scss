@@ -1,0 +1,104 @@
+.career-box-1 {
+  .menu-degrade {
+    width: 100%;
+    height: 64px;
+    background-image: linear-gradient(#e0dacc, transparent);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+  }
+  .featured-image {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .list-about-jobs {
+    display: grid;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 66px;
+  }
+}
+
+.career-box-2 {
+  position: relative;
+  padding-top: 174px;
+  .bg-career-box-2-diversity {
+    width: 821px;
+    height: 272px;
+    background: url(../images/career-box-2-diversity.png);
+    background-size: 821px 272px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  .content {
+    .content-text {
+      max-width: 361px;
+    }
+    .career-box-2-list {
+      display: grid;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-column-gap: 24px;
+    }
+  }
+}
+
+.career-box-3 {
+
+  .bg-career-box-2-diversity {
+    width: 821px;
+    height: 272px;
+    background: url(../images/career-box-2-diversity.png);
+    background-size: 821px 272px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  .content {
+    .line {
+      height: 1px;
+      background: #979797;
+      width: 100%;
+    }
+
+    .career-box-3-list {
+      display: grid;
+      display: grid;
+      grid-template-columns: auto;
+      grid-column-gap: 24px;
+      .jobs {
+        .type-job {
+          color: #1a9eb8;
+          padding: 8px;
+          border-radius: 5px;
+          border: solid 1px #1a9eb8;
+          font-size: 14px;
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    body {
+
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}

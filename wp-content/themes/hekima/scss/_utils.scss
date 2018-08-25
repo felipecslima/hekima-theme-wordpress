@@ -1,5 +1,10 @@
 @mixin text-decoratorStyle() {
   &.font {
+    &-style {
+      &-italic {
+        font-style: italic;
+      }
+    }
     &-family {
       &-grace {
         font-family: 'Covered By Your Grace', cursive;
@@ -59,6 +64,12 @@
   }
 
   &.color {
+    &-greyish-brown {
+      color: #555555;
+    }
+    &-orange {
+      color: #f3824d;
+    }
     &-purple {
       color: #41354b;
     }
@@ -71,6 +82,21 @@
   }
 
   &.bg {
+    &-satin-linen {
+      background-color: #E0DACC;
+    }
+    &-narvik {
+      background-color: #e9e7de;
+    }
+    &-white-smoke {
+      background-color: #f5f4f4;
+    }
+    &-dark-bridal {
+      background-color: #e2d6d6;
+    }
+    &-bridal {
+      background-color: #f4ebe0;
+    }
     &-green {
       background-color: #d2e4c6;
     }
@@ -161,6 +187,11 @@ a {
 }
 
 .font {
+  &-style {
+    &-italic {
+      font-style: italic;
+    }
+  }
   &-family {
     &-grace {
       font-family: 'Covered By Your Grace', cursive;
@@ -220,6 +251,9 @@ a {
 }
 
 .color {
+  &-greyish-brown {
+    color: #555555;
+  }
   &-orange {
     color: #f3824d;
   }
@@ -235,6 +269,9 @@ a {
 }
 
 .bg {
+  &-satin-linen {
+    background-color: #E0DACC;
+  }
   &-narvik {
     background-color: #e9e7de;
   }
@@ -308,6 +345,10 @@ a {
   &-center-space-between {
     justify-content: space-between;
     align-items: center;
+  }
+  &-end-center {
+    justify-content: flex-end;
+    align-items: start;
   }
 }
 

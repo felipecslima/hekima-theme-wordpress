@@ -55,6 +55,7 @@
 </header>
 
 <header class="mobile">
+    <?php // echo "<pre>"; print_r(get_current_template(  )); exit; ?>
     <div class="menu-mobile">
         <nav class="appbar">
             <div class="icon-menu-mobile-close">
