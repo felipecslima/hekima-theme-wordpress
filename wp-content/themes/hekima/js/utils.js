@@ -13,8 +13,25 @@ $(function () {
         $('.menu-mobile').fadeOut();
     });
 
+    $('button[type=submit]').on('click', function () {
+        $('.material-input, .material-textarea').find('label').css({color:''});
+        setTimeout(function () {
+            $('.wpcf7-not-valid').parents('.material-input, .material-textarea').find('label').css({color: '#c66262'});
+        }, 1000)
+    })
+
+    $('.material-textarea').click(function () {
+        $(this).find('textarea').focus();
+    });
+
+    $('.material-input').click(function () {
+        $(this).find('input').focus();
+    });
+
 });
 $(window).load(function () {
     // Animate loader off screen
     $('.page-loading').fadeOut('Slow');
 });
+
+

@@ -1,0 +1,49 @@
+.contact-box-1 {
+  .custom-form {
+    max-width: 747px;
+    form {
+      ::placeholder {
+        color: #958c9d;
+      }
+
+      .your-name {
+        input {
+          border-radius: 8px 8px 0 0;
+        }
+      }
+    }
+  }
+
+}
+
+.contact-box-2 {
+  .list {
+    display: grid;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 66px;
+    img {
+      width: 265px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    body {
+
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}

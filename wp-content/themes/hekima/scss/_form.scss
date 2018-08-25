@@ -1,0 +1,131 @@
+@mixin child-of-material-input($parent) {
+  @at-root {
+    #{$parent} %child {
+      @content;
+    }
+  }
+  @extend %child;
+}
+
+form {
+  .material {
+    &-input {
+      position: relative;
+      padding: 11px 0;
+      background-color: rgba(245, 244, 244, 1);
+      height: 56px;
+      box-shadow: inset 0 -2px 0 0 #f1ebe1;
+      label {
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        color: #958c9d;
+        padding: 0 20px;
+      }
+      .your-name {
+        input {
+          border-radius: 8px 8px 0 0;
+        }
+      }
+      > span.wpcf7-form-control-wrap {
+        margin-top: 14px;
+        display: inline-block;
+        width: 100%;
+      }
+      input {
+        padding: 0 20px;
+        width: 100%;
+        border: none;
+        color: #555555;
+        font-size: 14px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .wpcf7-not-valid-tip {
+        background: url('../images/alert-error.png') no-repeat;
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        color: transparent;
+        position: absolute;
+        top: -9px;
+        right: 20px;
+        font-size: 1px;
+      }
+    }
+    &-textarea {
+      position: relative;
+      padding: 11px 0;
+      background-color: rgba(245, 244, 244, 1);
+      box-shadow: inset 0 -2px 0 0 #f1ebe1;
+      label {
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        color: #958c9d;
+        padding: 0 20px;
+      }
+      > span.wpcf7-form-control-wrap {
+        margin-top: 14px;
+        display: inline-block;
+        width: 100%;
+      }
+      textarea {
+        border-radius: 0 0 8px 8px;
+        width: 100%;
+        background-color: rgba(245, 244, 244, 1);
+        border: none;
+        color: #555555;
+        font-size: 14px;
+        padding: 16px 20px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .wpcf7-not-valid-tip {
+        background: url('../images/alert-error.png') no-repeat;
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        color: transparent;
+        position: absolute;
+        top: -9px;
+        right: 20px;
+        font-size: 1px;
+      }
+
+    }
+  }
+  padding-bottom: 138px;
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 41px 0 0 0;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 32px;
+    line-height: 1.13;
+    color: #1a9eb8;
+    width: 110px;
+    text-align: right;
+    float: right;
+    img {
+      width: 24px;
+    }
+  }
+  .wpcf7-validation-errors {
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 16px;
+    border: none;
+    color: #c66262;
+  }
+}
