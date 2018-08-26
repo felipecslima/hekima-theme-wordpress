@@ -14,7 +14,7 @@ $(function () {
     });
 
     $('button[type=submit]').on('click', function () {
-        $('.material-input, .material-textarea').find('label').css({color:''});
+        $('.material-input, .material-textarea').find('label').css({color: ''});
         setTimeout(function () {
             $('.wpcf7-not-valid').parents('.material-input, .material-textarea').find('label').css({color: '#c66262'});
         }, 1000)
@@ -26,6 +26,22 @@ $(function () {
 
     $('.material-input').click(function () {
         $(this).find('input').focus();
+    });
+
+    var headerOffset = $("header.desktop");
+    if (headerOffset.offset().top >= 64) {
+        $("header.desktop").addClass('scrolled');
+    } else {
+        $("header.desktop").removeClass('scrolled');
+    }
+
+    $(window).scroll(function () {
+        var headerOffset = $("header.desktop");
+        if (headerOffset.offset().top >= 64) {
+            $("header.desktop").addClass('scrolled');
+        } else {
+            $("header.desktop").removeClass('scrolled');
+        }
     });
 
 });

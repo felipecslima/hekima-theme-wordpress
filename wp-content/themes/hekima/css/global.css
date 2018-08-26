@@ -242,6 +242,7 @@ header.mobile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: all 150ms;
 }
 .header nav {
   height: 64px;
@@ -300,6 +301,15 @@ header.mobile {
 .header nav ul li.current_page_item a {
   font-weight: 700;
   text-decoration: underline;
+}
+.header .logo .dark {
+  display: block;
+}
+.header .logo .light {
+  display: none;
+}
+.header.scrolled {
+  background: rgba(241, 235, 225, 0.95);
 }
 .header .logo {
   margin-right: 112px;
@@ -396,6 +406,7 @@ body.logged-in .header {
     font-weight: 300;
     color: #ffffff;
     margin-bottom: 24px;
+    display: inline-block;
   }
   header.mobile .menu-mobile ul.menu li.current_page_item a {
     font-weight: 500;
@@ -2869,6 +2880,7 @@ form .wpcf7-validation-errors {
   background: url(../images/home-bg-box-2.png) repeat;
 }
 .home-box-2 .home-content {
+  padding: 0 24px;
   position: relative;
   z-index: 1;
 }
@@ -2908,7 +2920,7 @@ form .wpcf7-validation-errors {
   position: relative;
   max-width: 1240px;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 .home-box-3 .home-content h2 {
   font-size: 38px;
@@ -2978,7 +2990,7 @@ form .wpcf7-validation-errors {
   position: relative;
   max-width: 1240px;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 .home-box-4 .home-content h2 {
   font-size: 38px;
@@ -2994,6 +3006,10 @@ form .wpcf7-validation-errors {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
 }
+.home-box-4 .home-content .partners a {
+  display: flex;
+  justify-content: center;
+}
 
 .home-box-5 {
   background-color: #e0dacc;
@@ -3004,7 +3020,7 @@ form .wpcf7-validation-errors {
   position: relative;
   max-width: 1240px;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 .home-box-5 .home-content h2 {
   font-size: 38px;
@@ -3045,6 +3061,7 @@ form .wpcf7-validation-errors {
 }
 .home-box-5 .home-content .home-blog ul li .line-1 {
   margin-top: 8px;
+  display: flex;
 }
 .home-box-5 .home-content .home-blog ul li .line-1 .category {
   font-size: 14px;
@@ -3136,7 +3153,7 @@ form .wpcf7-validation-errors {
   position: relative;
   max-width: 779px;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 .home-box-6 .home-content .title {
   display: flex;
@@ -3184,6 +3201,7 @@ form .wpcf7-validation-errors {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding: 0 24px;
   }
   .home-box-1 .home-content .chess-piece {
     display: block;
@@ -3221,7 +3239,7 @@ form .wpcf7-validation-errors {
     flex-direction: column;
     width: 100%;
     z-index: 1;
-    padding: 0 16px;
+    padding: 0 24px;
   }
   .home-box-2 .home-content .chess-piece-horse {
     display: block;
@@ -3248,7 +3266,7 @@ form .wpcf7-validation-errors {
     margin-top: 48px;
     max-width: 100%;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
   }
   .home-box-3 .home-content h2 {
     font-size: 24px;
@@ -3292,6 +3310,7 @@ form .wpcf7-validation-errors {
   .home-box-4 .home-content {
     margin-top: 72px;
     max-width: 100%;
+    padding: 0 24px;
   }
   .home-box-4 .home-content h2 {
     font-size: 24px;
@@ -3310,7 +3329,7 @@ form .wpcf7-validation-errors {
     margin-top: 48px;
     max-width: 100%;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
   }
   .home-box-5 .home-content h2 {
     font-size: 24px;
@@ -3421,7 +3440,7 @@ form .wpcf7-validation-errors {
     position: relative;
     max-width: 779px;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
   }
   .home-box-6 .home-content .title h2 {
     font-size: 24px;
@@ -3482,7 +3501,7 @@ form .wpcf7-validation-errors {
 .about-box-2 .content .list {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-column-gap: 80px;
+  grid-column-gap: 60px;
   grid-row-gap: 48px;
 }
 .about-box-2 .content .list div h3 {
@@ -3498,6 +3517,10 @@ form .wpcf7-validation-errors {
 .about-box-2 .content .list div p {
   max-width: 224px;
   text-align: center;
+}
+.about-box-2 .content .list div.work-here {
+  grid-column: span 2;
+  align-items: flex-start;
 }
 .about-box-2 .content .work-with-us {
   display: none;
@@ -3792,7 +3815,7 @@ form .wpcf7-validation-errors {
 
 @media only screen and (max-width: 960px) {
   html body .solutions-box-1 {
-    padding: 0 16px;
+    padding: 0 24px;
   }
   html body .solutions-box-1 .images-header {
     position: relative;
@@ -3830,7 +3853,7 @@ form .wpcf7-validation-errors {
     font-weight: 300;
   }
   html body .solutions-box-1 .content.strategy {
-    padding: 48px 16px 16px 16px;
+    padding: 48px 24px 16px 24px;
     grid-template-columns: auto;
   }
   html body .solutions-box-1 .content.strategy h2 {
@@ -3841,7 +3864,7 @@ form .wpcf7-validation-errors {
     line-height: 1.57;
   }
   html body .solutions-box-1 .content.solutions {
-    padding: 16px 16px 48px 16px;
+    padding: 16px 24px 48px 24px;
     grid-template-columns: auto;
     grid-row-gap: 24px;
   }
@@ -3881,7 +3904,7 @@ form .wpcf7-validation-errors {
     font-size: 24px;
   }
   html body .solutions-box-2 {
-    padding: 0 16px;
+    padding: 0 24px;
     height: 437px;
     justify-content: start;
     overflow: visible;
@@ -3912,7 +3935,7 @@ form .wpcf7-validation-errors {
     margin-top: 16px;
   }
   html body .solutions-box-3 {
-    padding: 0 16px;
+    padding: 0 24px;
   }
   html body .solutions-box-3 h2 {
     padding-top: 64px;
@@ -4092,7 +4115,7 @@ form .wpcf7-validation-errors {
     background-attachment: inherit;
   }
   html body .career-box-1 .content {
-    padding: 32px 16px;
+    padding: 32px 24px;
     overflow: hidden;
   }
   html body .career-box-1 .content .link {
@@ -4126,8 +4149,8 @@ form .wpcf7-validation-errors {
     background-size: cover;
   }
   html body .career-box-2 .content {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     overflow: hidden;
   }
   html body .career-box-2 .content .content-text {
@@ -4158,8 +4181,8 @@ form .wpcf7-validation-errors {
   }
   html body .career-box-3 .content {
     overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   html body .career-box-3 .content h2 {
     font-size: 24px;
@@ -4217,7 +4240,8 @@ form .wpcf7-validation-errors {
     padding-top: 112px;
   }
   html body .contact-box-1 .custom-form {
-    padding: 0 16px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   html body .contact-box-1 .custom-form .contact-title {
     display: flex;
@@ -4245,7 +4269,8 @@ form .wpcf7-validation-errors {
     display: none;
   }
   html body .contact-box-2 .list {
-    padding: 0 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     grid-template-columns: auto;
     grid-row-gap: 32px;
   }
@@ -4306,9 +4331,15 @@ form .wpcf7-validation-errors {
   flex-direction: row;
   justify-content: flex-end;
 }
+.footer .wrap .column-2 .footer-social ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .footer .wrap .column-2 .footer-social ul li a {
   color: #ffffff;
   font-size: 18px;
+  text-decoration: underline;
 }
 .footer .wrap .column-2 .footer-social ul li.footer-social-links {
   display: flex;
@@ -4316,6 +4347,7 @@ form .wpcf7-validation-errors {
 }
 .footer .wrap .column-2 .footer-social ul li.footer-social-links a {
   margin-left: 40px;
+  font-size: 24px;
 }
 .footer .wrap .column-2 .copyright {
   margin-top: 81px;
@@ -4361,6 +4393,9 @@ html, body {
   height: 100%;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
+  font-family: 'Roboto', sans-serif;
+  -webkit-overflow-scrolling: touch;
+  /* deixa a rolagem suave */
 }
 
 html {

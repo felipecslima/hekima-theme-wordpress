@@ -26,6 +26,8 @@ html, body {
   height: 100%;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
+  font-family: 'Roboto', sans-serif;
+  -webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
 }
 
 html {

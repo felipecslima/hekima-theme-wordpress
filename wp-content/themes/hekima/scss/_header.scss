@@ -32,6 +32,7 @@ header.mobile {
   flex-direction: row;
   justify-content: space-between;
 
+  transition: all 150ms;
   nav {
 
     height: 64px;
@@ -41,6 +42,7 @@ header.mobile {
       display: flex;
       flex-direction: row;
       align-content: center;
+
       li {
         height: 64px;
         margin-right: 32px;
@@ -97,6 +99,18 @@ header.mobile {
         }
       }
     }
+  }
+  .logo {
+    .dark {
+      display: block;
+    }
+    .light {
+      display: none;
+    }
+  }
+
+  &.scrolled {
+    background: rgba(241,235,225, 0.95);
   }
   .logo {
     margin-right: 112px;
@@ -199,6 +213,7 @@ body {
             font-weight: 300;
             color: #ffffff;
             margin-bottom: 24px;
+            display: inline-block;
           }
           &.current_page_item {
             a {

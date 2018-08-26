@@ -10,7 +10,7 @@
             <div>
                 <img src="https://via.placeholder.com/265x165" alt="Image">
                 <p class="margin-top-24">
-                    BELO HORIZONTE<br/>
+                    <span class="font-wt-semi-bold">BELO HORIZONTE</span><br/>
                     +55 31 2516-4812<br/>
                     Av. Álvares Cabral, 1315, Sala 7, Lourdes<br/>
                     30170-001
@@ -19,7 +19,7 @@
             <div>
                 <img src="https://via.placeholder.com/265x165" alt="Image">
                 <p class="margin-top-24">
-                    SÃO PAULO <br/>
+                    <span class="font-wt-semi-bold"> SÃO PAULO </span><br/>
                     Rua Casa do Ator, 919,<br/> Vila Olimpia<br/>
                     04546-003
                 </p>

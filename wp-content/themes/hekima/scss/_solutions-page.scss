@@ -216,7 +216,7 @@
   html {
     body {
       .solutions-box-1 {
-        padding: 0 16px;
+        padding: 0 24px;
         .images-header {
           position: relative;
           top: 0;
@@ -253,7 +253,7 @@
           }
 
           &.strategy {
-            padding: 48px 16px 16px 16px;
+            padding: 48px 24px 16px 24px;
             grid-template-columns: auto;
             h2 {
               font-size: 24px;
@@ -265,7 +265,7 @@
           }
 
           &.solutions {
-            padding: 16px 16px 48px 16px;
+            padding: 16px 24px 48px 24px;
             grid-template-columns: auto;
             grid-row-gap: 24px;
             > div {
@@ -311,7 +311,7 @@
         }
       }
       .solutions-box-2 {
-        padding: 0 16px;
+        padding: 0 24px;
         height: 437px;
         justify-content: start;
         overflow: visible;
@@ -343,7 +343,7 @@
         }
       }
       .solutions-box-3 {
-        padding: 0 16px;
+        padding: 0 24px;
         h2 {
           padding-top: 64px;
           font-size: 24px;

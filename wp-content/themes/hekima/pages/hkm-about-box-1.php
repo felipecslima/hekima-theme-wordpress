@@ -22,8 +22,8 @@
         </div>
     </div>
 
-    <div class="content width-100 max-with-1240 padding-top-80">
-        <h2 data-aos="fade-right">
+    <div class="content width-100 max-with-1240 padding-top-80" id="COMO_PENSAMOS">
+        <h2 data-aos="fade-right" >
             Como pensamos e agimos
         </h2>
 

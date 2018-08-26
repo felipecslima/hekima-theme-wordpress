@@ -1,6 +1,6 @@
 <div class="home-box-3 d-flex justify-content-center">
     <div class="home-content">
-        <h2>
+        <h2 class="font-wt-normal">
             Por que você quer a Hekima <br/>
             para transformar seu negócio
         </h2>

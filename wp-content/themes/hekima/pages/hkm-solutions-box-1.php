@@ -16,9 +16,9 @@
     </div>
 
 
-    <div class="content max-with-1240 width-100 padding-top-80 strategy">
+    <div id="ESTRATEGIA_DE_DADOS" class="content max-with-1240 width-100 padding-top-80 strategy">
         <div>
-            <h2>
+            <h2 >
                 Estratégia de Dados<br/>
                 _
             </h2>

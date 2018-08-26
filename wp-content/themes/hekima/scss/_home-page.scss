@@ -78,6 +78,7 @@
   }
 
   .home-content {
+    padding: 0 24px;
     position: relative;
     z-index: 1;
     .chess-piece-horse {
@@ -120,7 +121,7 @@
     position: relative;
     max-width: 1240px;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
     h2 {
       font-size: 38px;
       color: #41354b;
@@ -196,7 +197,7 @@
     position: relative;
     max-width: 1240px;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
     h2 {
       font-size: 38px;
       color: #41354b;
@@ -211,6 +212,10 @@
       grid-template-columns: auto auto auto auto auto;
       grid-column-gap: 24px;
       grid-row-gap: 24px;
+      a {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
@@ -224,7 +229,7 @@
     position: relative;
     max-width: 1240px;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
     h2 {
       font-size: 38px;
       font-weight: 500;
@@ -262,6 +267,7 @@
           }
           .line-1 {
             margin-top: 8px;
+            display: flex;
             .category {
               font-size: 14px;
               font-weight: 500;
@@ -373,7 +379,7 @@
     position: relative;
     max-width: 779px;
     width: 100%;
-    padding: 0 16px;
+    padding: 0 24px;
     .title {
       display: flex;
       flex-direction: row;
@@ -447,6 +453,7 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
+      padding: 0 24px;
       .chess-piece {
         display: block;
         width: 48px;
@@ -486,7 +493,7 @@
       flex-direction: column;
       width: 100%;
       z-index: 1;
-      padding: 0 16px;
+      padding: 0 24px;
       .chess-piece-horse {
         display: block;
         width: 64px;
@@ -516,7 +523,8 @@
       margin-top: 48px;
       max-width: 100%;
       width: 100%;
-      padding: 0 16px;
+      padding: 0 24px;
+
       h2 {
         font-size: 24px;
         color: #41354b;
@@ -564,6 +572,7 @@
     .home-content {
       margin-top: 72px;
       max-width: 100%;
+      padding: 0 24px;
 
       h2 {
         font-size: 24px;
@@ -586,7 +595,8 @@
       margin-top: 48px;
       max-width: 100%;
       width: 100%;
-      padding: 0 16px;
+      padding: 0 24px;
+
       h2 {
         font-size: 24px;
         font-weight: normal;
@@ -707,7 +717,8 @@
       position: relative;
       max-width: 779px;
       width: 100%;
-      padding: 0 16px;
+      padding: 0 24px;
+
       .title {
         h2 {
           font-size: 24px;

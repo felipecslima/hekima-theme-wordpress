@@ -1,5 +1,5 @@
-<div class="solutions-box-3 padding-top-128 padding-bottom-80 bg-white-smoke display-flex flex-column flex-align-all-center">
-    <h2 class="width-100 text-width-746">
+<div class="solutions-box-3 padding-top-128 padding-bottom-80 bg-white-smoke display-flex flex-column flex-align-all-center" id="APLICACOES">
+    <h2 class="width-100 text-width-746 font-wt-normal" >
         Por que executar estratégias de negócio
         com Inteligência Artificial, e não com os
         métodos tradicionais
@@ -14,7 +14,7 @@
                     volume incrível de informação em tempo real e fornecem resultados mais amplos e precisos sobre
                     buscas futuras por seus produtos e serviços.
                 </p>
-                <span class="color-orange margin-top-32 display-flex">— Por exemplo —</span>
+                <span class="color-orange margin-top-32 display-flex font-family-grace">— Por exemplo —</span>
                 <p class="font-size-18 margin-top-16">
                     Em vez de realizar a predição de demanda de um produto em um único modelo, são desenvolvidos
                     diversos modelos capazes de prever a procura em vários níveis, como estado, cidade, bairro e até a
@@ -28,7 +28,7 @@
                     Análises avançadas de múltiplos fatores que influenciam nos preços de produtos e serviços, como a
                     demanda de consumidores em tempo real, para a construção de modelos de precificação dinâmica.
                 </p>
-                <span class="color-orange margin-top-32 display-flex">— Por exemplo —</span>
+                <span class="color-orange margin-top-32 display-flex font-family-grace">— Por exemplo —</span>
                 <p class="font-size-18 margin-top-16">
                     Caso haja uma grande procura por passagens para São Paulo em determinada data devido a um show na
                     cidade, uma companhia aérea que utiliza modelos de IA na precificação consegue adaptar seus preços
@@ -42,7 +42,7 @@
                     Classificações automáticas, em tempo real, capazes de rotular grandes volumes de informação, como
                     aplicações para análise semântica de texto e identificação de transações fraudulentas.
                 </p>
-                <span class="color-orange margin-top-32 display-flex">— Por exemplo —</span>
+                <span class="color-orange margin-top-32 display-flex font-family-grace">— Por exemplo —</span>
                 <p class="font-size-18 margin-top-16">
                     Os algoritmos de aprendizado de máquina são capazes de analisar milhões de transações financeiras em
                     tempo real, possibilitando classificar com precisão aquelas com as maiores probabilidades e riscos
@@ -57,7 +57,7 @@
                     identificando previamente aqueles mais propensos a saírem. Isso possibilita à sua empresa elaborar
                     estratégias de retenção proativas, segmentadas e efetivas.
                 </p>
-                <span class="color-orange margin-top-32 display-flex">— Por exemplo —</span>
+                <span class="color-orange margin-top-32 display-flex font-family-grace">— Por exemplo —</span>
 
                 <p class="font-size-18 margin-top-16">
                     Por meio da análise de dados referentes a desempenho escolar, frequência e outros, é possível

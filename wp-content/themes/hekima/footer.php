@@ -7,7 +7,7 @@
                     <img src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-white.svg" alt="Logo Hekima">
                 </div>
                 <p class="footer-slogan">
-                    <b>Seus dados. Nossa Inteligência Artificial.</b> <br/>
+                    Seus dados. Nossa Inteligência Artificial. <br/>
                     A melhor estratégia de negócios
                     que sua empresa pode ter.
                 </p>

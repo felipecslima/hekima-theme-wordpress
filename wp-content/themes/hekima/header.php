@@ -49,7 +49,8 @@
     )) ?>
 
     <div class="logo">
-        <img src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-black.svg" alt="Logo Hekima">
+        <img class="dark" src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-black.svg" alt="Logo Hekima">
+        <img class="light" src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-white.svg" alt="Close">
     </div>
 
 </header>
@@ -62,7 +63,7 @@
                 <img class="animated jello" src="<?php bloginfo('template_url'); ?>/images/svg/icon-close.svg" alt="Close">
             </div>
             <div class="logo">
-                <img src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-white.svg" alt="Close">
+                <img class="dark" src="<?php bloginfo('template_url'); ?>/images/svg/logo-hekima-white.svg" alt="Close">
             </div>
         </nav>
 

@@ -29,7 +29,7 @@
                 </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="150">
-                <h3 class="font-size-32 font-style-italic">
+                <h3 class="font-size-32 font-style-italic font-wt-normal">
                     Diversidade é ser convidado para a festa; inclusão é ser chamado para dançar.
                 </h3>
                 <p class="font-size-24 margin-top-24">— Verna Myers</p>

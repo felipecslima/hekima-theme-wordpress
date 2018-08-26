@@ -37,7 +37,7 @@
     .list {
       display: grid;
       grid-template-columns: repeat(4, minmax(200px, 1fr));
-      grid-column-gap: 80px;
+      grid-column-gap: 60px;
       grid-row-gap: 48px;
       div {
         h3 {
@@ -53,6 +53,10 @@
         p {
           max-width: 224px;
           text-align: center;
+        }
+        &.work-here {
+          grid-column: span 2;
+          align-items: flex-start;
         }
       }
     }

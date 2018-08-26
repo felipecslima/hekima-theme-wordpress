@@ -48,7 +48,8 @@
       .contact-box-1 {
         padding-top: 112px;
         .custom-form {
-          padding: 0 16px;
+          padding-left: 24px;
+          padding-right: 24px;
           .contact-title {
             display: flex;
             align-items: flex-end;
@@ -80,7 +81,8 @@
           }
         }
         .list {
-          padding: 0 16px;
+          padding-left: 24px;
+          padding-right: 24px;
           grid-template-columns: auto;
           grid-row-gap: 32px;
           img {
