@@ -5,12 +5,12 @@
     <div class="featured-image" style="background-image: url(<?php echo $image[0] ?>)"></div>
     <div class="content padding-top-64 width-100 max-with-1240 padding-bottom-48">
         <div class="list-about-jobs">
-            <div class="display-flex flex-align-start-center">
+            <div data-aos="fade-up" class="display-flex flex-align-start-center">
                 <img width="245"
                      src="<?php bloginfo('template_url'); ?>/images/about-great-place-to-work@3x.png"
                      alt="">
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="50">
                 <p class="font-size-18 color-greyish-brown">
                     Nos empenhamos para criar um ambiente colaborativo, focado e criativo, que incentiva a evolução e
                     valoriza as habilidades de toda a equipe. Também trabalhamos pelo equilíbrio entre vida profissional
@@ -18,7 +18,7 @@
                     microempresas para se trabalhar.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <p class="font-size-18 color-greyish-brown">
                     Se você é uma pessoa empreendedora, proativa, prática, com jogo de cintura, brilho nos olhos, tem
                     visão de negócio, muita vontade de atuar no mercado gerando valor para organizações e acredita que

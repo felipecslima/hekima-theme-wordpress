@@ -8,12 +8,12 @@
 
     <div class="content max-with-1240 width-100 text-box-1">
         <div class="content-text">
-            <h1>
+            <h1 data-aos="fade-right" data-aos-delay="0">
                 Criatividade humana fazendo <br/>
                 Inteligência Artificial, muito <br/>
                 além da tecnologia.
             </h1>
-            <p class="margin-top-20">
+            <p class="margin-top-20" data-aos="fade-right" data-aos-delay="50">
                 Realizamos grandes projetos e ajudamos você e sua <br/>
                 empresa a gerarem resultados de negócio por<br/>
                 acreditarmos na relação complementar entre <br/>
@@ -23,12 +23,12 @@
     </div>
 
     <div class="content width-100 max-with-1240 padding-top-80">
-        <h2>
+        <h2 data-aos="fade-right">
             Como pensamos e agimos
         </h2>
 
         <div class="padding-bottom-64 margin-top-40 list">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="0">
                 <div class="icon">
                     <img src="<?php bloginfo('template_url'); ?>/images/svg/about-group.svg" alt="">
                 </div>
@@ -40,7 +40,7 @@
                     criatividade nos trouxe até aqui e ela irá nos conduzir para o futuro.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <div class="icon">
                     <img src="<?php bloginfo('template_url'); ?>/images/svg/about-triangule-scheme.svg" alt="">
                 </div>
@@ -52,7 +52,7 @@
                     e desafia os modelos já estabelecidos.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="150">
                 <div class="icon">
                     <img src="<?php bloginfo('template_url'); ?>/images/svg/about-world.svg" alt="">
 

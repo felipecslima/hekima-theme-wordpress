@@ -31,14 +31,19 @@
 .career-box-2 {
   position: relative;
   padding-top: 174px;
-  .bg-career-box-2-diversity {
-    width: 821px;
-    height: 272px;
-    background: url(../images/career-box-2-diversity.png);
-    background-size: 821px 272px;
+  .bg-career-box-2 {
     position: absolute;
     top: 20px;
     right: 0;
+    width: 821px;
+    height: 272px;
+    overflow: hidden;
+    .bg-career-box-2-diversity {
+      width: 821px;
+      height: 272px;
+      background: url(../images/career-box-2-diversity.png);
+      background-size: 821px 272px;
+    }
   }
   .content {
     padding-left: 24px;
@@ -63,15 +68,6 @@
     margin: 64px 0;
   }
 
-  .bg-career-box-2-diversity {
-    width: 821px;
-    height: 272px;
-    background: url(../images/career-box-2-diversity.png);
-    background-size: 821px 272px;
-    position: absolute;
-    top: 20px;
-    right: 0;
-  }
   .content {
     padding-left: 24px;
     padding-right: 24px;

@@ -1,12 +1,12 @@
 <div class="about-box-2 about bg-light-grey display-flex flex-direction-column flex-align-all-center">
     <div class="content  padding-left-16 padding-right-16 padding-top-64">
-        <h2 class="color-blue font-wt-semi-bold text-align-center">
+        <h2 class="color-blue font-wt-semi-bold text-align-center font-size-32" data-aos="fade-right">
             Quem faz a Hekima
         </h2>
 
         <div class="margin-top-64 list-parent">
             <div class="list padding-bottom-64">
-                <div class="display-flex flex-direction-column flex-align-center-start">
+                <div data-aos="fade-up" class="display-flex flex-direction-column flex-align-center-start">
                     <div class="image">
                         <img class="border-raidus"
                              width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
@@ -15,7 +15,7 @@
                     <p class="margin-top-4 color-blue font-size-16 font-wt-semi-bold">CEO</p>
                 </div>
 
-                <div class="display-flex flex-direction-column flex-align-center-start">
+                <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start">
                     <div class="image">
                         <img class="border-raidus"
                              width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
@@ -24,17 +24,7 @@
                     <p class="margin-top-4 color-blue font-size-16 font-wt-semi-bold">ANALISTA ADMNISTRATIVO
                         FINANCEIRO</p>
                 </div>
-                <div class="display-flex flex-direction-column flex-align-center-start">
-                    <div class="image">
-                        <img class="border-raidus"
-                             width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
-                    </div>
-                    <h3 class="color-purple font-size-24 margin-top-16">Daniele Ribeiro</h3>
-                    <p class="margin-top-4 color-blue font-size-16 font-wt-semi-bold">ANALISTA ADMNISTRATIVO
-                        FINANCEIRO</p>
-                </div>
-
-                <div class="display-flex flex-direction-column flex-align-center-start">
+                <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start">
                     <div class="image">
                         <img class="border-raidus"
                              width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
@@ -44,7 +34,7 @@
                         FINANCEIRO</p>
                 </div>
 
-                <div class="display-flex flex-direction-column flex-align-center-start">
+                <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start">
                     <div class="image">
                         <img class="border-raidus"
                              width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
@@ -54,7 +44,7 @@
                         FINANCEIRO</p>
                 </div>
 
-                <div class="display-flex flex-direction-column flex-align-center-start">
+                <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start">
                     <div class="image">
                         <img class="border-raidus"
                              width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
@@ -64,14 +54,24 @@
                         FINANCEIRO</p>
                 </div>
 
-                <div class="display-flex flex-direction-column flex-align-center-start mb-hidden">
+                <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start">
+                    <div class="image">
+                        <img class="border-raidus"
+                             width="200" height="200" src="https://via.placeholder.com/200x200" alt="Person">
+                    </div>
+                    <h3 class="color-purple font-size-24 margin-top-16">Daniele Ribeiro</h3>
+                    <p class="margin-top-4 color-blue font-size-16 font-wt-semi-bold">ANALISTA ADMNISTRATIVO
+                        FINANCEIRO</p>
+                </div>
+
+                <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start mb-hidden">
                     <div class="image blank">
                     </div>
                     <h3 class="color-purple font-size-24 margin-top-16">&nbsp;</h3>
                     <p class="margin-top-4 color-blue font-size-16 font-wt-semi-bold">&nbsp;</p>
                 </div>
 
-                <div class="display-flex flex-direction-column flex-align-center-start mb-hidden">
+                <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start mb-hidden">
                     <div class="image">
                         <img width="245"
                              src="<?php bloginfo('template_url'); ?>/images/about-great-place-to-work@3x.png"
@@ -89,7 +89,7 @@
             </div>
         </div>
 
-        <div class="display-flex flex-direction-column flex-align-center-start work-with-us">
+        <div data-aos="fade-up"class="display-flex flex-direction-column flex-align-center-start work-with-us">
             <div class="image">
                 <img width="245"
                      src="<?php bloginfo('template_url'); ?>/images/about-great-place-to-work@3x.png"

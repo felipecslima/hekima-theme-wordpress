@@ -7,7 +7,7 @@
 
         <div class="hekima-helps-you">
             <ul class="">
-                <li>
+                <li data-aos="fade-up" data-aos-delay="0">
                     <div class="image">
                         <img src="<?php bloginfo('template_url'); ?>/images/svg/home-box-3-puzzle.svg" alt="Puzzle">
                     </div>
@@ -20,7 +20,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li data-aos="fade-up" data-aos-delay="50">
                     <div class="image">
                         <img src="<?php bloginfo('template_url'); ?>/images/svg/home-box-3-mountains.svg" alt="Puzzle">
                     </div>
@@ -34,7 +34,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li data-aos="fade-up" data-aos-delay="100">
                     <div class="image">
                         <img src="<?php bloginfo('template_url'); ?>/images/svg/home-box-3-clock-money.svg"
                              alt="Puzzle">
@@ -49,7 +49,7 @@
                     </div>
                 </li>
 
-                <li>
+                <li data-aos="fade-up" data-aos-delay="150">
                     <div class="image">
                         <img src="<?php bloginfo('template_url'); ?>/images/svg/home-box-3-team-idea.svg" alt="Puzzle">
                     </div>
@@ -63,7 +63,7 @@
                 </li>
             </ul>
 
-            <div class="link" <!--  d-flex align-items-center justify-content-center -->
+            <div class="link" data-aos="fade-up"> <!--  d-flex align-items-center justify-content-center -->
                 <a href="" class=""> <!-- d-flex flex-row align-items-center -->
                     <span>Conheça nossas soluções</span>
                     <img src="<?php bloginfo('template_url'); ?>/images/arrow-right-blue@3x.png" alt="Clique aqui">
