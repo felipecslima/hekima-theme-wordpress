@@ -3026,9 +3026,11 @@ form {
   background-size: cover; }
 .career-box-1 .list-about-jobs {
   display: grid;
-  display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 66px; }
+.career-box-1 .content {
+  padding-left: 24px;
+  padding-right: 24px; }
 
 .career-box-2 {
   position: relative;
@@ -3041,14 +3043,21 @@ form {
     position: absolute;
     top: 20px;
     right: 0; }
-  .career-box-2 .content .content-text {
-    max-width: 361px; }
-  .career-box-2 .content .career-box-2-list {
-    display: grid;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 24px; }
+  .career-box-2 .content {
+    padding-left: 24px;
+    padding-right: 24px; }
+    .career-box-2 .content .content-text {
+      max-width: 361px; }
+    .career-box-2 .content .career-box-2-list {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-column-gap: 24px; }
 
+.career-box-3 .divider {
+  border-top: solid 2px rgba(255, 255, 255, 0.32);
+  height: 0.1px;
+  width: 100%;
+  margin: 64px 0; }
 .career-box-3 .bg-career-box-2-diversity {
   width: 821px;
   height: 272px;
@@ -3057,22 +3066,99 @@ form {
   position: absolute;
   top: 20px;
   right: 0; }
-.career-box-3 .content .line {
-  height: 1px;
-  background: #979797;
-  width: 100%; }
-.career-box-3 .content .career-box-3-list {
-  display: grid;
-  display: grid;
-  grid-template-columns: auto;
-  grid-column-gap: 24px; }
-  .career-box-3 .content .career-box-3-list .jobs .type-job {
-    color: #1a9eb8;
-    padding: 8px;
-    border-radius: 5px;
-    border: solid 1px #1a9eb8;
-    font-size: 14px; }
+.career-box-3 .content {
+  padding-left: 24px;
+  padding-right: 24px; }
+  .career-box-3 .content .line {
+    height: 1px;
+    background: #979797;
+    width: 100%; }
+  .career-box-3 .content .career-box-3-list {
+    display: grid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 24px; }
+    .career-box-3 .content .career-box-3-list .jobs .type-job {
+      color: #1a9eb8;
+      padding: 8px;
+      border-radius: 5px;
+      border: solid 1px #1a9eb8;
+      font-size: 14px; }
 
+@media only screen and (max-width: 960px) {
+  .career-box-1 .featured-image {
+    height: 360px; }
+  .career-box-1 .content {
+    padding: 32px 16px;
+    overflow: hidden; }
+    .career-box-1 .content .link {
+      display: none; }
+    .career-box-1 .content .list-about-jobs {
+      display: grid;
+      grid-template-columns: auto;
+      grid-row-gap: 16px; }
+      .career-box-1 .content .list-about-jobs p {
+        font-size: 16px;
+        line-height: 1.5; }
+
+  .career-box-2 {
+    padding-top: 16px; }
+    .career-box-2 .bg-career-box-2-diversity {
+      width: 100%;
+      height: 272px;
+      background: url(../images/career-box-2-diversity.png) no-repeat center center;
+      background-size: cover;
+      position: relative;
+      top: 0px;
+      right: 0;
+      left: 0; }
+    .career-box-2 .content {
+      padding-left: 16px;
+      padding-right: 16px;
+      overflow: hidden; }
+      .career-box-2 .content .content-text {
+        max-width: 100%;
+        margin-top: 32px; }
+        .career-box-2 .content .content-text h2 {
+          font-size: 24px;
+          line-height: 1.25; }
+      .career-box-2 .content .career-box-2-list {
+        margin-top: 16px;
+        grid-template-columns: auto;
+        grid-row-gap: 16px; }
+        .career-box-2 .content .career-box-2-list p {
+          font-size: 16px;
+          line-height: 1.5; }
+        .career-box-2 .content .career-box-2-list h3 {
+          margin-top: 32px;
+          font-size: 24px;
+          line-height: 1.25;
+          font-weight: normal; }
+
+  .career-box-3 .divider {
+    margin: 48px 0; }
+  .career-box-3 .content {
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px; }
+    .career-box-3 .content h2 {
+      font-size: 24px;
+      line-height: 1.25; }
+    .career-box-3 .content .jobs h3 {
+      font-size: 18px;
+      line-height: 1.44; }
+    .career-box-3 .content .jobs p {
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      font-size: 16px;
+      line-height: 1.5; }
+      .career-box-3 .content .jobs p span {
+        margin: 0; }
+        .career-box-3 .content .jobs p span.type-job {
+          margin-top: 8px;
+          font-size: 14px;
+          line-height: 1; } }
 .contact-box-1 .custom-form {
   max-width: 747px; }
   .contact-box-1 .custom-form form ::placeholder {

@@ -1,7 +1,7 @@
-<div class="career-box-3 bg-satin-linen display-flex flex-column flex-align-all-center padding-top-64 padding-bottom-40">
-
+<div class="career-box-3 bg-satin-linen display-flex flex-column flex-align-all-center padding-bottom-40">
+    <div class="divider"></div>
     <div class="content max-with-1240 width-100 text-box-1">
-        <h2 class="font-size-38 width-100">Estamos procurando por</h2>
+        <h2 class="font-size-38 width-100">Estamos procurando por:</h2>
         <div class="line margin-top-24 margin-bottom-24"></div>
         <div class="career-box-3-list width-100">
             <div class="jobs">

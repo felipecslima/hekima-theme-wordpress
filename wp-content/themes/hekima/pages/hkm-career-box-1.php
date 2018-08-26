@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="display-flex flex-align-end-center width-100 margin-top-20">
+        <div class="display-flex flex-align-end-center width-100 margin-top-20 link">
             <a href="" class="display-flex flex-direction-row flex-align-all-center">
                             <span class="font-family-grace color-blue font-size-32 margin-right-16">
                                 Veja nossas vagas
