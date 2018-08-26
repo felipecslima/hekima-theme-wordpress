@@ -1,24 +1,22 @@
 .contact-box-1 {
-  .custom-form {
-    max-width: 747px;
-    form {
-      ::placeholder {
-        color: #958c9d;
-      }
-
-      .your-name {
-        input {
-          border-radius: 8px 8px 0 0;
-        }
-      }
+  .contact-title {
+    display: flex;
+    h1 {
+      font-size: 32px;
+      display: flex;
+      align-items: flex-end;
+      margin-right: 45px;
     }
   }
-
+  .custom-form {
+    max-width: 747px;
+    padding: 0 24px;
+  }
 }
 
 .contact-box-2 {
   .list {
-    display: grid;
+    padding: 0 24px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 66px;
@@ -45,5 +43,55 @@
 }
 
 @media only screen and (max-width: 960px) {
+  html {
+    body {
+      .contact-box-1 {
+        padding-top: 112px;
+        .custom-form {
+          padding: 0 16px;
+          .contact-title {
+            display: flex;
+            align-items: flex-end;
+            h1 {
+              font-size: 24px;
+            }
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
 
+        }
+        button {
+          span {
+            font-size: 24px;
+            font-weight: normal;
+          }
+        }
+      }
+
+      .contact-box-2 {
+        padding-top: 48px;
+        h2 {
+          font-size: 24px;
+          line-height: 1.25;
+          br{
+            display: none;
+          }
+        }
+        .list {
+          padding: 0 16px;
+          grid-template-columns: auto;
+          grid-row-gap: 32px;
+          img {
+            width: 265px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+
+      }
+    }
+  }
 }

@@ -1944,6 +1944,12 @@ a {
 
 form {
   padding-bottom: 138px; }
+  form ::placeholder {
+    color: #958c9d; }
+  form .first {
+    border-radius: 8px 8px 0 0; }
+  form .last {
+    border-radius: 0 0 8px 8px; }
   form .material-input {
     position: relative;
     padding: 11px 0;
@@ -1965,6 +1971,7 @@ form {
       display: inline-block;
       width: 100%; }
     form .material-input input {
+      background-color: #f5f4f4;
       padding: 0 20px;
       width: 100%;
       border: none;
@@ -2033,6 +2040,8 @@ form {
     float: right; }
     form button img {
       width: 24px; }
+  form.wpcf7-form.invalid button {
+    margin: 61px 0 0 0; }
   form .wpcf7-validation-errors {
     float: left;
     margin: 0;
@@ -2064,8 +2073,8 @@ form {
     right: 0;
     z-index: 1; }
   .home-box-1 .home-content {
+    padding: 0 24px;
     position: relative;
-    left: 169px;
     z-index: 1; }
     .home-box-1 .home-content .chess-piece {
       display: none; }
@@ -2111,7 +2120,6 @@ form {
     background: url(../images/home-bg-box-2.png) repeat; }
   .home-box-2 .home-content {
     position: relative;
-    left: 169px;
     z-index: 1; }
     .home-box-2 .home-content .chess-piece-horse {
       display: none; }
@@ -3159,15 +3167,19 @@ form {
           margin-top: 8px;
           font-size: 14px;
           line-height: 1; } }
+.contact-box-1 .contact-title {
+  display: flex; }
+  .contact-box-1 .contact-title h1 {
+    font-size: 32px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 45px; }
 .contact-box-1 .custom-form {
-  max-width: 747px; }
-  .contact-box-1 .custom-form form ::placeholder {
-    color: #958c9d; }
-  .contact-box-1 .custom-form form .your-name input {
-    border-radius: 8px 8px 0 0; }
+  max-width: 747px;
+  padding: 0 24px; }
 
 .contact-box-2 .list {
-  display: grid;
+  padding: 0 24px;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 66px; }
@@ -3176,6 +3188,37 @@ form {
   .contact-box-2 .list p {
     font-size: 18px; }
 
+@media only screen and (max-width: 960px) {
+  html body .contact-box-1 {
+    padding-top: 112px; }
+    html body .contact-box-1 .custom-form {
+      padding: 0 16px; }
+      html body .contact-box-1 .custom-form .contact-title {
+        display: flex;
+        align-items: flex-end; }
+        html body .contact-box-1 .custom-form .contact-title h1 {
+          font-size: 24px; }
+        html body .contact-box-1 .custom-form .contact-title img {
+          width: 80px;
+          height: 80px; }
+    html body .contact-box-1 button span {
+      font-size: 24px;
+      font-weight: normal; }
+  html body .contact-box-2 {
+    padding-top: 48px; }
+    html body .contact-box-2 h2 {
+      font-size: 24px;
+      line-height: 1.25; }
+      html body .contact-box-2 h2 br {
+        display: none; }
+    html body .contact-box-2 .list {
+      padding: 0 16px;
+      grid-template-columns: auto;
+      grid-row-gap: 32px; }
+      html body .contact-box-2 .list img {
+        width: 265px; }
+      html body .contact-box-2 .list p {
+        font-size: 18px; } }
 .footer {
   padding: 56px 56px 50px 56px;
   background-color: #595149; }
@@ -3254,7 +3297,9 @@ form {
 	Base
 /* ========================================================================== */
 html, body {
-  height: 100%; }
+  height: 100%;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation; }
 
 html {
   height: 100%;
