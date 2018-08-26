@@ -41,7 +41,7 @@
 
 </head>
 <body <?php body_class() ?>>
-<header class='header text-primary d-flex flex-row justify-content-between align-items-center desktop'>
+<header class='header desktop'>
     <?php wp_nav_menu(array(
         'theme_location' => 'main-nav',
         'container' => 'nav',

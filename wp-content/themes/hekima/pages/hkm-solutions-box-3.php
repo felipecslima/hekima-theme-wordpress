@@ -4,9 +4,9 @@
         com Inteligência Artificial, e não com os
         métodos tradicionais
     </h2>
-    <div class="content padding-left-74 padding-right-74 padding-top-80 max-with-1240">
-        <ul class="display-flex flex-direction-row flex-align-start-space-between">
-            <li class="margin-right-24" data-aos="fade-up">
+    <div class="content padding-top-80 max-with-1240 width-100">
+        <div class="list">
+            <div data-aos="fade-up">
                 <img src="<?php bloginfo('template_url'); ?>/images/svg/solutions-box-2-icon-cart.svg" alt="">
                 <h3 class="margin-top-24 font-size-24 font-wt-bold">Predição de demanda escalável</h3>
                 <p class="font-size-18 margin-top-16">
@@ -20,8 +20,8 @@
                     diversos modelos capazes de prever a procura em vários níveis, como estado, cidade, bairro e até a
                     unidade de loja.
                 </p>
-            </li>
-            <li class="margin-right-24" data-aos="fade-up" data-aos-delay="50">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="50">
                 <img src="<?php bloginfo('template_url'); ?>/images/svg/solutions-box-2-icon-price.svg" alt="">
                 <h3 class="margin-top-24 font-size-24 font-wt-bold">Precificação dinâmica de produtos</h3>
                 <p class="font-size-18 margin-top-16">
@@ -34,8 +34,8 @@
                     cidade, uma companhia aérea que utiliza modelos de IA na precificação consegue adaptar seus preços
                     de acordo com o aumento de demanda praticamente em tempo real, maximizando seus lucros.
                 </p>
-            </li>
-            <li class="margin-right-24" data-aos="fade-up" data-aos-delay="150">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="150">
                 <img src="<?php bloginfo('template_url'); ?>/images/svg/solutions-box-2-icon-items.svg" alt="">
                 <h3 class="margin-top-24 font-size-24 font-wt-bold">Classificação automática de itens </h3>
                 <p class="font-size-18 margin-top-16">
@@ -48,8 +48,8 @@
                     tempo real, possibilitando classificar com precisão aquelas com as maiores probabilidades e riscos
                     de serem fraudulentas.
                 </p>
-            </li>
-            <li class="margin-right-24" data-aos="fade-up" data-aos-delay="200">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <img src="<?php bloginfo('template_url'); ?>/images/svg/solutions-box-2-icon-clients.svg" alt="">
                 <h3 class="margin-top-24 font-size-24 font-wt-bold">Detecção antecipada de evasão de clientes</h3>
                 <p class="font-size-18 margin-top-16">
@@ -64,8 +64,8 @@
                     predizer a probabilidade e os motivos que podem levar um determinado aluno a não renovar sua
                     matrícula.
                 </p>
-            </li>
-            </li>
-        </ul>
+            </div>
+            </div>
+        </div>
     </div>
 </div>

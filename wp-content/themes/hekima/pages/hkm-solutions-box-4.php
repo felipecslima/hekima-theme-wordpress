@@ -6,8 +6,8 @@
         <div class="bg-solutions-box-4-simplicidata-notebook" data-aos="fade-left" data-aos-delay="50"></div>
     </div>
 
-    <div class="content max-with-1240 width-100 padding-top-74">
-        <img width="379" src="<?php bloginfo('template_url'); ?>/images/solutions-box-3-simplicidata.png" alt="">
+    <div class="content max-with-1240 width-100 padding-top-74 simplicidata">
+        <img class="img-simplicidata" width="379" src="<?php bloginfo('template_url'); ?>/images/solutions-box-3-simplicidata.png" alt="">
         <div class="content-text">
             <h2 class="margin-top-64">Simplicidata, nossa tecnologia proprietária de Inteligência Artificial</h2>
             <p class="font-size-24 font-wt-light margin-top-24">
@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <div class="content max-with-1240 width-100 padding-top-128 padding-bottom-64">
+    <div class="content max-with-1240 width-100 padding-top-128 padding-bottom-64 benefice">
         <h2 class="width-100 text-align-center">
             O Simplicidata gera benefícios claros e diretos para o seu negócio, como:
         </h2>

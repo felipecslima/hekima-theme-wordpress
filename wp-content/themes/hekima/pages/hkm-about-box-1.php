@@ -1,26 +1,34 @@
-<div class="about-box-1 about bg-green">
-    <div class="about-bg-about-us"></div>
-    <div class="content padding-left-74 padding-right-74 padding-top-128">
-        <h1>
-            Criatividade humana fazendo <br/>
-            Inteligência Artificial, muito <br/>
-            além da tecnologia.
-        </h1>
-        <p class="margin-top-20">
-            Realizamos grandes projetos e ajudamos você e sua <br/>
-            empresa a gerarem resultados de negócio por<br/>
-            acreditarmos na relação complementar entre <br/>
-            homem e máquina.
-        </p>
+<div class="about-box-1 padding-top-128 about bg-green display-flex flex-direction-column width-100 flex-align-all-center">
+
+    <div class="images-header">
+        <div class=width-100">
+            <div data-aos="fade-up" class="about-bg-about-us"></div>
+        </div>
     </div>
 
-    <div class="content padding-left-74 padding-right-74 padding-top-80">
+    <div class="content max-with-1240 width-100 text-box-1">
+        <div class="content-text">
+            <h1>
+                Criatividade humana fazendo <br/>
+                Inteligência Artificial, muito <br/>
+                além da tecnologia.
+            </h1>
+            <p class="margin-top-20">
+                Realizamos grandes projetos e ajudamos você e sua <br/>
+                empresa a gerarem resultados de negócio por<br/>
+                acreditarmos na relação complementar entre <br/>
+                homem e máquina.
+            </p>
+        </div>
+    </div>
+
+    <div class="content width-100 max-with-1240 padding-top-80">
         <h2>
             Como pensamos e agimos
         </h2>
 
-        <ul class="padding-bottom-64 margin-top-40 list padding-left-none display-flex flex-direction-row">
-            <li>
+        <div class="padding-bottom-64 margin-top-40 list">
+            <div>
                 <div class="icon">
                     <img src="<?php bloginfo('template_url'); ?>/images/svg/about-group.svg" alt="">
                 </div>
@@ -31,8 +39,8 @@
                     algoritmos. Por isso, a gente se reinventa a cada projeto, a cada produto, todos os dias. A
                     criatividade nos trouxe até aqui e ela irá nos conduzir para o futuro.
                 </p>
-            </li>
-            <li>
+            </div>
+            <div>
                 <div class="icon">
                     <img src="<?php bloginfo('template_url'); ?>/images/svg/about-triangule-scheme.svg" alt="">
                 </div>
@@ -43,8 +51,8 @@
                     decisões mais inovadoras, comprometidas e inteligentes justamente porque experimenta vários cenários
                     e desafia os modelos já estabelecidos.
                 </p>
-            </li>
-            <li>
+            </div>
+            <div>
                 <div class="icon">
                     <img src="<?php bloginfo('template_url'); ?>/images/svg/about-world.svg" alt="">
 
@@ -55,9 +63,9 @@
                     gastos, otimizar processos e, principalmente, nos pautamos pelo uso responsável e ético da IA e dos
                     dados para gerar impacto positivo ao final de cada projeto e uma devolutiva à sociedade e ao mundo.
                 </p>
-            </li>
+            </div>
 
-        </ul>
+        </div>
 
     </div>
 </div>

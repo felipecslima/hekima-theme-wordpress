@@ -27,7 +27,13 @@ header.mobile {
   background: transparent;
   top: 0;
   z-index: 99;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   nav {
+
     height: 64px;
     ul {
       padding: 0;
@@ -97,6 +103,9 @@ header.mobile {
     img {
       width: 116px;
     }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -109,8 +118,14 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
+
+  #wpadminbar {
+    position: fixed !important;
+    top: 0 !important;
+  }
+
   header.desktop {
-    display: none !important;
+    display: none;
   }
   header.mobile {
     display: flex;
@@ -190,6 +205,9 @@ body {
               font-weight: 500;
               text-decoration: underline;
             }
+          }
+          .sub-menu {
+            display: none;
           }
         }
       }
